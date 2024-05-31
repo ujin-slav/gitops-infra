@@ -1,19 +1,20 @@
-kind: Deployment
 apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: react-docker
+  name: react-app
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
-      app: react-docker
+      app: react-app
   template:
     metadata:
       labels:
-        app: react-docker
+        app: react-app
     spec:
       containers:
-      - name: react-docker
-        image: ujinslav/gitops01:6439f232b03ceebf90ce65c34efc84cac02cb990
-        ports:
-        - containerPort: 80
+        - name: react-app
+          image: imrishav/gitops01:604ac3b39a717bbceb7e0386debaed67fd7857bb
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
