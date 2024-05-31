@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: react-app
-          image: imrishav/gitops01:604ac3b39a717bbceb7e0386debaed67fd7857bb
+          image: ujinslav/gitops01:6439f232b03ceebf90ce65c34efc84cac02cb990
           imagePullPolicy: Always
           ports:
             - containerPort: 80
