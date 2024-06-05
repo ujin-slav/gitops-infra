@@ -4,7 +4,7 @@ metadata:
   name: reactapp-ingress
 spec:
   rules:
-  - host: example.com
+  - host: ujinslav.ru
     http:
       paths:
       - path: /
